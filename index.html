@@ -1,10 +1,12 @@
-<!doctype html>
+
+        <!-- get_header('Page Name','Title')-->
+    <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Qhub - Home</title>
+<title>QHub - Home</title>
 <meta name="description" content>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../../external.html?link=https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -30,7 +32,21 @@
 </head>
 <body>
 
+<div class="preloader" id="preloader">
+<svg class="xs-preload" viewBox="0 0 120 120" width="120px" height="120px">
+<circle class="inner" cx="60" cy="60" r="32" />
+<circle class="middle" cx="60" cy="60" r="38" />
 
+</svg>
+
+</div>
+
+<div class="search-wrap">
+<form class="search-inner" id="main_search" method="get">
+<input id="search_text" type="search" placeholder="Search..." autocomplete="off">
+<button id="searchbtn" type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
 
 
 <div class="xs-sidebar-group cart-group">
@@ -45,12 +61,13 @@
 </div>
 </div>
 <div class="xs-empty-content">
-
+<h3 class="widget-title">Shopping cart</h3>
+<h4 class="xs-title">No products in the cart.</h4>
 <p class="empty-cart-icon">
 <i class="icon icon-shopping-cart"></i>
 </p>
 <p class="xs-btn-wraper">
-
+<a class="btn btn-primary" href="#">Return To Shop</a>
 </p>
 </div>
 </div>
@@ -66,7 +83,67 @@
 <i class="icon icon-cross"></i>
 </a>
 </div>
-
+<div class="sidebar-textwidget">
+<div class="sidebar-logo-wraper">
+<img src="assets/images/sidebar_logo_1.png" alt="sidebar logo">
+</div>
+<p>Far far away, behind the word moun tains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of </p>
+<ul class="sideabr-list-widget">
+<li>
+<div class="media">
+<div class="d-flex">
+<i class="icon icon-placeholder2"></i>
+</div>
+<div class="media-body">
+<p>759 Pinewood Avenue</p>
+<span>Marquette, Michigan</span>
+</div>
+</div>
+</li>
+<li>
+<div class="media">
+<div class="d-flex">
+<i class="icon icon-email2"></i>
+</div>
+<div class="media-body">
+<a href="../../external.html?link=https://html.xpeedstudio.com/cdn-cgi/l/email-protection#f59c9b939ab5919a98949c9bdb969a98"><span class="__cf_email__" data-cfemail="97fef9f1f8d7f3f8faf6fef9b9f4f8fa">[email&#160;protected]</span></a>
+<span>Online Support</span>
+</div>
+</div>
+</li>
+<li>
+<div class="media">
+<div class="d-flex">
+<i class="icon icon-phone-call2"></i>
+</div>
+<div class="media-body">
+<p>906-624-2565</p>
+<span>Mon-Fri 8am-5pm</span>
+</div>
+</div>
+</li>
+</ul>
+<div class="subscribe-from">
+<p>Get Subscribed!</p>
+<form action="#" method="POST" id="subscribe-form" class="subscribe-form">
+<label for="sub-input"></label>
+<div class="form-group">
+<input type="email" name="email" id="sub-input" placeholder="Enter your mail here" class="form-control">
+<button class="sub-btn" type="submit"><i class="icon icon-arrow-right"></i></button>
+</div>
+</form>
+</div>
+<ul class="social-list version-2">
+<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+<li><a href="#" class="vimeo"><i class="fa fa-vimeo"></i></a></li>
+</ul>
+<div class="text-center">
+<a href="#" class="btn btn-primary">Purchase Now</a>
+</div>
+</div>
 </div>
 </div>
 </div>  
@@ -106,11 +183,8 @@ EN
 </div>
 </div>
 </li>
-<li>
-</li>
-<li>
 
-</li>
+
 <li>
 <a href="#" class="navSidebar-button">
 <i class="icon-menu2"></i>
@@ -118,18 +192,19 @@ EN
 </li>
 </ul>
 <ul class="nav-menu align-to-right">
-<li ><a href="#">Home</a>
-<div class="meagamenu-panel">
-<div class="meagamenu-panel-row">
-<div class="col-lg-4 col-12">
-</div>
+<li class="active"><a href="#">Home</a>
+<div class="megamenu-panel">
+<div class="megamenu-panel-row">
+
+
+
 </div>
 </div>
 </li>
 <li><a href="#featured" class="scrolls">Task</a></li>
-<li><a href="#how_work" class="scrolls">Target</a></li>
-<li><a href="#team" class="scrolls">Roadmap</a></li>
-<li><a href="#blog" class="scrolls">Distribution</a></li>
+<li><a href="#how_work" class="scrolls">Roadmap</a></li>
+<li><a href="#team" class="scrolls">Distribution</a></li>
+<li><a href="#blog" class="scrolls">Features</a></li>
 </ul>
 </div>
 </nav>
@@ -145,8 +220,7 @@ EN
 <div class="row">
 <div class="col-lg-6 col-md-8">
 <div class="banner-content">
-<h1 class="banner-title">Lets Invest in QHub</h1>
-    <h3>QHub ecosystem:</h3>
+<h1 class="banner-title">Lets Invest in         QHub</h1>
 <p id="colo">
 
 QHub - Launchpad, 
@@ -159,7 +233,7 @@ QHub - DAO,
     
 also many other projects.
 </p>
-<a href="https://waves.exchange/trading/spot/5xcZ53RAihdqvjvDCXDXtXMJVHecK2BxcoqZb5m1AUX2_WAVES" class="btn btn-primary btn-v2">buy qhub token</a>
+<a href="https://waves.exchange/trading/spot/5xcZ53RAihdqvjvDCXDXtXMJVHecK2BxcoqZb5m1AUX2_WAVES" class="btn btn-primary btn-v2">but Qhub</a>
 </div>
 </div>
 </div>
@@ -172,8 +246,237 @@ also many other projects.
 </div>
 </div>
 </section> 
+<div class="featured-area">
+<div class="blockcain-and-featured-area">
+
+<section class="blockcain-top-sec">
+<div class="container">
+<div class="row">
+<div class="col-md-6 wow fadeInUp" data-wow-duration="1.5s">
+<div class="blockcain-top">
+<h2 class="column-title">QHub - utility token in our ecosystem</h2>
+</div>
+</div>
+<div class="col-md-5 offset-md-1 wow fadeInUp" data-wow-duration="2s">
+<div class="blockcain-top-content">
+<ul id="li">
+<li id="li">- Staking</li>
+<li id="li">- Farming</li>
+<li id="li">- participation in IDO</li>
+<li id="li">- will be integrated into new QHub ecosystem products</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</section> 
+
+<section class="featured-sec" id="featured">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 mx-auto">
+<div class="section-title-item">
+<h2 class="section-title">QHub Features</h2>
+</div>
+</div>
+</div>
+<div class="main-fetured-item">
+<div class="row">
+<div class="col-md-4 wow fadeInUp" data-wow-duration="1.5s">
+<div class="single-feaured-item">
+<img src="assets/images/feature/icon-1.png" alt>
+<h3 class="feature-title">
+QHub token has a deflationary model
+</h3>
+<p>
+25% of our ecosystem revenue will be used to buy back and burn the QHub token
+</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-duration="2s">
+<div class="single-feaured-item">
+<img src="assets/images/feature/icon-2.png" alt>
+<h3 class="feature-title">
+Total issued
+</h3>
+<p>
+1,000,000,000 QHub token
+</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-duration="2.5s">
+<div class="single-feaured-item">
+<img src="assets/images/feature/icon-3.png" alt>
+<h3 class="feature-title">
+Networks
+</h3>
+<p>
+BSC, ETH, Polygon, Aptos, Sui, Waves and other.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="featured-poligonal-img wow fadeInUp" data-wow-duration="1.5s">
+<img class="poligonal-img" src="assets/images/feature/poligonal.png" alt>
+</div>
+</div>
+</section> 
+</div>
+<div class="blockcain-and-logo-area">
+
+
+
+<section class="client-logo-sec">
+<div class="container">
+<div class="client-logo-item">
+<div class="row owl-carousel" id="client-slider">
+<div class="col-sm wow fadeInUp" data-wow-duration="1.5s">
+<div class="client-logo">
+<img src="assets/images/client_logo/logo_style1.png" alt>
+</div>
+</div>
+<div class="col-sm wow fadeInUp" data-wow-duration="2s">
+<div class="client-logo">
+<img src="assets/images/client_logo/logo_style2.png" alt>
+</div>
+</div>
+<div class="col-sm wow fadeInUp" data-wow-duration="2.5s">
+<div class="client-logo">
+<img src="assets/images/client_logo/logo_style3.png" alt>
+</div>
+</div>
+<div class="col-sm wow fadeInUp" data-wow-duration="3s">
+<div class="client-logo">
+<img src="assets/images/client_logo/logo_style4.png" alt>
+</div>
+</div>
+<div class="col-sm wow fadeInUp" data-wow-duration="3.5s">
+<div class="client-logo">
+<img src="assets/images/client_logo/logo_style5.png" alt>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> 
+</div>
+</div>
+</div>
+<div class="how-work-and-token-area">
+<div class="token-roadmap-area">
+
+<section class="token-distribution-sec section-padding" style>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 mx-auto">
+<div class="section-title-item">
+<small class="xs-section-title">Token Details</small>
+<h2 class="section-title">Token Distribution</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6 wow fadeInUp" data-wow-duration="1.5s">
+<div class="row chart-gap">
+<div class="col-sm-7 ml-lg-auto">
+    <img src="assets/images/dist.png" alt>
+
+</div> 
     
-    
+<div class=" col-sm-5">
+<ul class="chart-label">
+<li>
+<img src="assets/images/dist.png" alt>
+<span class="chart-bg1">51 %</span>Community
+</li>
+<li>
+<img src="assets/images/token/label_img2.png" alt>
+<span class="chart-bg2">19 %</span> Marketing & development
+</li>
+<li>
+<img src="assets/images/token/label_img3.png" alt>
+<span class="chart-bg3">5 %</span> Pre sale
+</li>
+<li>
+<img src="assets/images/token/label_img4.png" alt>
+<span class="chart-bg4">10 %</span> Team
+</li>
+</ul>
+</div> 
+</div> 
+</div> 
+</div> 
+</div>
+</section> 
+
+<section class="roadmap-sec section-padding" style>
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-8 mx-auto">
+<div class="section-title-item">
+<small class="xs-section-title">Process</small>
+<h2 class="section-title">Roadmap</h2>
+</div>
+</div>
+</div>
+<div class="roadmap-timeline">
+<img src="assets/images/roadmap/timeline_white.png" alt>
+<div class="custom-container container">
+<div class="row roadmap-timeline-item">
+<div class="col-md xs-roadmap wow fadeInUp" data-wow-duration="1.5s">
+<div class="single-roadmap-timeline">
+<h3>4th quarter - 2023April 2015</h3>
+<ul id="li">
+<li id="li">-packaging of the project</li>
+<li id="li">-community development;</li>
+<li id="li">-Pre Sale</li>
+<li id="li">-Bounty company</li>
+<li id="li">-AirDrop</li>
+<li id="li">-Farming program;</li>
+<li id="li">-Public Sale</li>
+<li id="li">-creation of DAO</li>
+<li id="li"> -creation of Launchpad;</li>
+<li id="li">-creation of NFT Marketplace</li>
+ </ul>
+</div>
+</div>
+<div class="col-md xs-roadmap wow fadeInUp" data-wow-duration="2s">
+<div class="single-roadmap-timeline">
+<h3>1st quarter - 2024</h3>
+<p>
+-selection of projects for Launchpad.
+</p>
+</div>
+</div>
+<div class="col-md xs-roadmap wow fadeInUp" data-wow-duration="2.5s">
+<div class="single-roadmap-timeline">
+<h3>2nd quarter 2024</h3>
+  <ul>
+<li id="li"> -launch of the first IDO on Launchpad</li>
+<li id="li">-buyback and burning of QHub token</li>
+   </ul>
+</div>
+</div>
+<div class="col-md xs-roadmap wow fadeInUp" data-wow-duration="3s">
+<div class="single-roadmap-timeline">
+<h3>3-4 quarter 2024</h3>
+<p>
+-launch of new products in our ecosystem
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section> 
+</div>
+</div>
+<div class="document-and-team-area">
+
+ 
 <section class="blockcain-business-sec">
 <div class="container">
 <div class="row">
@@ -201,115 +504,10 @@ Creation of 10 thousand new millionaires in the Crypto world
 <a href="https://waves.exchange/trading/spot/5xcZ53RAihdqvjvDCXDXtXMJVHecK2BxcoqZb5m1AUX2_WAVES" class="btn btn-primary">BUY QHub token</a>
 </div>
 </div>
-</div>
-</div>
 </section> 
-    
-    
-    
-    
-    
-    
-    
-<div class="featured-area">
-<div class="blockcain-and-featured-area">
-
-<section class="blockcain-top-sec">
-<div class="container">
-<div class="row">
-<div class="col-md-6 wow fadeInUp" data-wow-duration="1.5s">
-<div class="blockcain-top">
-<h2 class="column-title">QHub - utility token in our ecosystem</h2>
-</div>
-</div>
-<div class="col-md-5 offset-md-1 wow fadeInUp" data-wow-duration="2s">
-<div class="blockcain-top-content">
-<p id="colo">
-USED FOR
-<ul id="li">
-<li id="li">- Staking</li>
-<li id="li">- Farming</li>
-<li id="li">- participation in IDO</li>
-<li id="li">- will be integrated into new QHub ecosystem products</li>
- </ul>
-
-<li id="li">QHub token has a deflationary model.</li>
-25% of our ecosystem revenue will be used to buy back and burn the QHub token;
-
-<li id="li">Total issued</li>
-1,000,000,000 QHub token
-
-<li id="li">Networks:</li>
-BSC, ETH, Polygon, Aptos, Sui, Waves and other.
-</p>
-</div>
-</div>
-</div>
-
-</section> 
-
- 
-</div>
-<div class="blockcain-and-logo-area">
-
-
-
- 
-</div>
-
-<div class="document-and-team-area">
-<section>
-    
-    <h1>Roadmap</h1>
-<ol>
-    <li style="--accent-color:#41516C">
-        <div class="date">4th quarter - 2023</div>
-        <div class="title"></div>
-        <div class="descr">
-<ul id="li">
-<li id="li">-packaging of the project</li>
-<li id="li">-community development;</li>
-<li id="li">-Pre Sale</li>
-<li id="li">-Bounty company</li>
-<li id="li">-AirDrop</li>
-<li id="li">-Farming program;</li>
-<li id="li">-Public Sale</li>
-<li id="li">-creation of DAO</li>
-<li id="li"> -creation of Launchpad;</li>
-<li id="li">-creation of NFT Marketplace</li>
- </ul>
-            
-</div>
-    </li>
-    <li style="--accent-color:#FBCA3E">
-        <div class="date">1st quarter - 2024</div>
-        <div class="title" style="color:#FBCA3E"></div>
-        <div class="descr">-selection of projects for Launchpad.</div>
-    </li>
-    <li style="--accent-color:#E24A68">
-        <div class="date">2nd quarter - 2024</div>
-        <div class="title"></div>
-        <ul>
-<li id="li"> -launch of the first IDO on Launchpad</li>
-<li id="li">-buyback and burning of QHub token</li>
-   </ul>
-</li>
-    <li style="--accent-color:#1B5F8C">
-        <div class="date">3-4 quarter 2024</div>
-        <div class="title"></div>
-        <div class="descr"> -launch of new products in our ecosystem</div>
-    </li>
-   
-</ol>  
-    </section>
-
-
-
 </div>
 <div class="blog-and-footer-area">
 <div class="blog-and-social-area">
-
-
 
 <section class="social-list-sec section-padding" style>
 <div class="container">
@@ -323,10 +521,10 @@ BSC, ETH, Polygon, Aptos, Sui, Waves and other.
 </div>
 <div class="row">
 <div class="col-lg col-6 col-md-3 wow fadeInUp" data-wow-duration=".5s">
-<div class="single-social-list telegram">
-<i class="fa fa-telegram"></i>
+<div class="single-social-list facebook">
+<i class="fa fa-facebook"></i>
 <h3 class="xs-title sm">Telegram</h3>
-<a href="https://t.me/qhub_io">
+<a href="#">
 <span class="icon icon-arrow-right"></span>
 </a>
 </div>
@@ -340,6 +538,9 @@ BSC, ETH, Polygon, Aptos, Sui, Waves and other.
 </a>
 </div>
 </div>
+
+
+
 </div> 
 </div>
 </section> 
@@ -357,23 +558,23 @@ BSC, ETH, Polygon, Aptos, Sui, Waves and other.
 </a>
 </div>
 <p>
-Lets Invest in QHub
+Lets invest in QHub
 </p>
 </div>
 </div>
-
-<div class="col-lg-3 offset-lg-1 col-sm-6">
+<div class="col-lg-2 offset-lg-1 col-sm-6">
 <div class="footer-widget">
-<h4 class="widget-title">Contact</h4>
-<form method="get" class="widget-subscibe">
-<input type="email" name="email" class="subscribe-email" placeholder="Email">
-<button type="submit" class="subs-btn"><i class="fa fa-paper-plane"></i> </button>
-</form>
+<h4 class="widget-title">Company</h4>
 <ul>
-<li>Email: <a href="../../external.html?link=https://info.qhub.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1a8afa7ae81a4b9a0acb1ada4efac">&#160;info@ghub.io</a></li>
+<li><a href="#"> About</a></li>
+<li><a href="#"> Task</a></li>
+<li><a href="#"> Roadmap</a></li>
+<li><a href="#"> Distribution</a></li>
 </ul>
 </div>
 </div>
+
+
 </div>
 </div>
 
@@ -405,4 +606,5 @@ Copyright © 2023 QHub
 <script src="assets/js/main.js"></script>
 </body>
 
+<!-- Mirrored from html.xpeedstudio.com/trypto/index-2.html by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 02 Oct 2023 02:54:53 GMT -->
 </html>
