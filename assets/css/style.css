@@ -2513,11 +2513,14 @@ a.cencel-preloader {
   font-size: 14px; }
 #colo{
     color: white;
+    text-align: center;
 }
 .colo{
     color: white;
 }
-
+#hh{
+    color: yellow;
+}
 
 
 
