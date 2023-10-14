@@ -2521,7 +2521,10 @@ a.cencel-preloader {
 #hh{
     color: yellow;
 }
-
+#para{
+    padding-bottom: 0px;
+    margin: 0px;
+}
 
 
 
