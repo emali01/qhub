@@ -2523,10 +2523,14 @@ a.cencel-preloader {
 }
 #para{
     padding-bottom: 0px;
-    margin: 0px;
+    padding-right: 500%;
+    margin-right: 50%;
 }
 
-
+#par{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
 
 h1 {
   text-align: center;
